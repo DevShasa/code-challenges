@@ -1,3 +1,4 @@
+import copy
 #Demonstration of bubble sort to sort numbers 
 '''
 First begin by inputting numbers into a list 
@@ -6,6 +7,9 @@ Nested if statements inside the for loop will compare two numbers and switch the
 '''
 #Activate the list 
 sort_list = [1,34,56,7,3,2,6,678,245,4,2,5,76,87,4]
+#Copy a fresh unchanged copy of the list so that it can be sorted low to high and high to low 
+new_list = copy.deepcopy(sort_list)
+
 
 # #Input ten numbers to sort into a list 
 # for input_count in range(1,11):
@@ -26,6 +30,11 @@ for outside_count in range(0, len(sort_list)+1):
             sort_list[inside_count] = sort_list[inside_count+1]
             sort_list[inside_count+1] = temp
 
+#Sort the list from highest to lowest, basicaly the same as above just change the comparison operator
+#First we copy the list  
+
+
 #Lets see if it works shall we 😰
-print("The sorted list is")
+print("The list sorted from lowest to highest")
 print(sort_list)
+
