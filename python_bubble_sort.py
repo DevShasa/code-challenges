@@ -31,10 +31,16 @@ for outside_count in range(0, len(sort_list)+1):
             sort_list[inside_count+1] = temp
 
 #Sort the list from highest to lowest, basicaly the same as above just change the comparison operator
-#First we copy the list  
-
+for count2 in range(0,len(new_list)+1):
+    for count3 in range(len(new_list)-1):
+        if new_list[count3] < new_list[count3+1]:
+            #If left digit is smaller than right digit, switch them 
+            temp = new_list[count3]
+            new_list[count3] = new_list[count3+1]
+            new_list[count3+1] = temp
 
 #Lets see if it works shall we 😰
 print("The list sorted from lowest to highest")
 print(sort_list)
-
+print('The list sorted from highest to lowest is')
+print(new_list)
