@@ -1,4 +1,5 @@
 import copy
+import random
 #Demonstration of bubble sort to sort numbers 
 '''
 First begin by inputting numbers into a list 
@@ -6,7 +7,13 @@ The sort numbers in the list using a for loop
 Nested if statements inside the for loop will compare two numbers and switch them in order to sort the list 
 '''
 #Activate the list 
-sort_list = [1,34,56,7,3,2,6,678,245,4,2,5,76,87,4]
+sort_list = []
+
+#Create ten random numbers and save them into a list
+for number in range(0,11):
+    random_number = random.randint(1,100)
+    sort_list.append(random)
+  
 #Copy a fresh unchanged copy of the list so that it can be sorted low to high and high to low 
 new_list = copy.deepcopy(sort_list)
 
