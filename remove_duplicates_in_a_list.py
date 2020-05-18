@@ -1,4 +1,4 @@
-#In this here file we get to see a simple way of removing duplicates from a list 
+#Go through a list and eliminate duplicates  
 
 #First step, create a list with some duplicate values in it 
 list_with_duplicates = ["a","f","a","h","w","h","x","x","t","t","n","n","l","l","l","a","f","f","q","t","h"]
