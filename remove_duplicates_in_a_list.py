@@ -1,4 +1,5 @@
-#Go through a list and eliminate duplicates  
+#Go through a list and eliminate duplicates
+#TODO, fix bug that makes it no return anything 😭
 
 #First step, create a list with some duplicate values in it 
 list_with_duplicates = ["a","f","a","h","w","h","x","x","t","t","n","n","l","l","l","a","f","f","q","t","h"]
