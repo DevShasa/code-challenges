@@ -13,8 +13,10 @@ while True:
         continue
 
 #This is where we check whether the number is odd or even 
-#Use teh modulo operator which returns the remainder of a division 
-#When even numbers are divided by two they have no remainder, this is the criteria for our checking code 
+#Use the modulo operator which returns the remainder of a division 
+#When even numbers are divided by two they have no remainder,
+#If a number has no remainder it is even 
+#If a number has a remainder, it is odd 
 
 if (int_usr_input % 2)==0:
     print('The number', int_usr_input,'is an even number')
