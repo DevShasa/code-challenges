@@ -17,3 +17,10 @@ for count1 in number_list:
     if smallest_number > count1:
         smallest_number = count1
 print('The smallest number is', smallest_number)
+
+#STEP THREE find the largest number in the list 
+largest_number = 0
+for count2 in number_list:
+    if largest_number < count2:
+        largest_number = count2
+print('The largest number is', largest_number)
