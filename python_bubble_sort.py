@@ -25,21 +25,32 @@ new_list = copy.deepcopy(sort_list)
 
 #Sort the list from lowest to highest using bubble sort 
 for outside_count in range(0, len(sort_list)+1):
+    #Create a flag that terminates the loop when there are no more comparisons to make,
+    #Use of flag makes it a bit more efficient 
+    flag = False
     for inside_count in range(0, len(sort_list)-1):
         if sort_list[inside_count] > sort_list[inside_count+1]:
             #If the value on the left is bigger than the value on the right, switch them 
             temp = sort_list[inside_count]
             sort_list[inside_count] = sort_list[inside_count+1]
             sort_list[inside_count+1] = temp
+            flag = True
+    #If there are no more comparisons to make break the loop 
+    if flag == False:
+        break
 
 #Sort the list from highest to lowest, basicaly the same as above just change the comparison operator
 for count2 in range(0,len(new_list)+1):
+    flag2 = False
     for count3 in range(len(new_list)-1):
         if new_list[count3] < new_list[count3+1]:
             #If left digit is smaller than right digit, switch them 
             temp = new_list[count3]
             new_list[count3] = new_list[count3+1]
             new_list[count3+1] = temp
+            flag2 = True
+    if flag2 == False:
+        break
 
 
 
