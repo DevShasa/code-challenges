@@ -28,7 +28,7 @@ for outside_count in range(0, len(sort_list)+1):
     #Create a flag that terminates the loop when there are no more comparisons to make,
     #Use of flag makes it a bit more efficient 
     flag = False
-    for inside_count in range(0, len(sort_list)-1):
+    for inside_count in range(0, len(sort_list)-1-outside_count):
         if sort_list[inside_count] > sort_list[inside_count+1]:
             #If the value on the left is bigger than the value on the right, switch them 
             temp = sort_list[inside_count]
@@ -42,7 +42,7 @@ for outside_count in range(0, len(sort_list)+1):
 #Sort the list from highest to lowest, basicaly the same as above just change the comparison operator
 for count2 in range(0,len(new_list)+1):
     flag2 = False
-    for count3 in range(len(new_list)-1):
+    for count3 in range(len(new_list)-1-count2):
         if new_list[count3] < new_list[count3+1]:
             #If left digit is smaller than right digit, switch them 
             temp = new_list[count3]
