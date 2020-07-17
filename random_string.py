@@ -1,7 +1,11 @@
 #Code to generate list of random string 
 #First create a list with the alphabet
 #Then generate random string 
-#Then save the strings into a file  
+#Then save the strings into a file 
+'''
+What is the point of this? 
+Useful perhaps for generating random keys for a database or for creating security keys
+''' 
 import random
 
 #STEP ONE: create a list with letters 
