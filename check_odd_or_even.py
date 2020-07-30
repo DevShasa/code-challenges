@@ -1,24 +1,29 @@
-#This code checks if a number is odd or even
-
-#Accept user input and validate it to ensure that it is a number
+def odd_or_even(number):
+    '''
+    Function uses the modulo operator to check if odd or even 
+    If number is even it returns true if odd it returns false
+    '''
+    if (number % 2)==0:
+        #Number is even, return true 
+        return True
+    else:
+        #Number is odd return false
+        return False
+    
+#Take in number from user and validate it 
 while True:
     try:
-        usr_input = input("Please enter a number: ")
-        int_usr_input = int(usr_input)
-        #If everything goes well break the loop 
+        pass
+        user_input = input('Enter number to check if odd or even: ')
+        number = int(user_input)
         break
     except ValueError:
-        #If the user enters something other than a number, perform these statements 
-        print("Please only enter a number")
+        print('Please only enter a number')
         continue
 
-#This is where we check whether the number is odd or even 
-#Use the modulo operator which returns the remainder of a division 
-#When even numbers are divided by two they have no remainder,
-#If a number has no remainder it is even 
-#If a number has a remainder, it is odd 
-
-if (int_usr_input % 2)==0:
-    print('The number', int_usr_input,'is an even number')
+#Check if number is odd or even by passing it to the odd_or_even function
+result = odd_or_even(number)
+if result == True:
+    print (number, 'Is an even number')
 else:
-    print('The number', int_usr_input, 'Is an odd number')
+    print(number, 'Is an odd number')
