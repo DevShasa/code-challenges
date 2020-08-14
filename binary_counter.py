@@ -20,7 +20,7 @@ usr_number_bin = bin(user_number_int)
 usr_string = str(usr_number_bin)
 count = 0
 for counter in usr_string:
-    #If a digit in teh string is 1 increase counter by one 
+    #If a digit in the string is 1 increase counter by one 
     if counter == '1':
         count = count + 1
 
