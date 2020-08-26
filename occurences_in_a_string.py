@@ -13,4 +13,4 @@ def count_characters(string, character):
 
 
 occurences = count_characters('chameleon', 'e')
-print(occurences)
+print("The character occurs", occurences, "times")
