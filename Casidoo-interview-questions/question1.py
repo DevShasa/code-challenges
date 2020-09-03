@@ -6,20 +6,23 @@
 # The code should produce "buy on day 4 sell on day 7"
 
 def sort_buy_sell(array):
-    buycounter = 1
-    sellcounter = 1
+    # Counters, why are they so many lol 🧐
+    buycounter = 0
+    sellcounter = 0
+    counter = 0
     sell = 0
     buy =  array[0]
     for count in array:
+        counter = counter + 1
         if sell < count:
             sell = count
-            sellcounter = sellcounter + 1
+            sellcounter = counter
         if buy > count:
             buy = count
-            buycounter = buycounter + 1
+            buycounter = counter
     print("buy", buy, "sell", sell)
     print("Buy on day", buycounter, "sell on", sellcounter)
 
 #Activating the function
-array = [110, 180, 260, 40, 1, 1000, 310, 535, 695]
+array = [110, 180, 260, 40, 310, 535, 695]
 sort_buy_sell(array)
