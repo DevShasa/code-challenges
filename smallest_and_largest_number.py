@@ -1,11 +1,13 @@
-# This code is for the purpose of finding the largest and smallest number in a list 
+# This code is for the purpose of finding the largest...
+# ... and smallest number in a list
 
-# STEP ONE, use python random function to populate the list with ten random numbers 
+# STEP ONE, use python random function to populate the...
+# ... list with ten random numbers
 import random
 number_list = []
-#Fill the list with ten random numbers between 1 and 100
+# Fill the list with ten random numbers between 1 and 100
 for count in range(1, 10+1):
-    random_number = random.randint(1,100)
+    random_number = random.randint(1, 100)
     number_list.append(random_number)
 # Print the list
 print("The ten random numbers are")
