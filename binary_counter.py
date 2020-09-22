@@ -3,7 +3,7 @@
 
 def validate_number(prompt):
 
-    # take in a number from the user and make sure that the number is an integer
+    # make sure that the number is an integer
     while True:
         user_number = input(prompt)
         try:
@@ -14,6 +14,7 @@ def validate_number(prompt):
             # Jump to the top of the loop to try again
             continue
     return user_number_int
+
 
 # STEP TWO, convert the number to binary using inbuilt pythn function
 number = validate_number("Please enter number ")
