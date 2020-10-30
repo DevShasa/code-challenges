@@ -24,3 +24,5 @@ def characterCount(string):
             dictionary[character] = 1
 
     return dictionary
+
+print(characterCount('dictionary'))
