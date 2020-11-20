@@ -4,8 +4,8 @@ def special_pairs(xs):
     seen = defaultdict(int)
     count = 0
     for x in xs:
-        count += seen[x]
-        seen[x] += 1
+        count  =  count + seen[x]
+        seen[x] = seen[x] + 1
     return count
 
 
