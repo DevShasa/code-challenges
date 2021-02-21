@@ -21,3 +21,9 @@ def countDistinctCharacters(character_string):
 # Activating the function
 character_count = countDistinctCharacters('AAATTTYyYY')
 print(character_count)
+
+'''
+This is a concise one liner solution
+'''
+def count(string):
+    return{i: string.count(i) for i in string}

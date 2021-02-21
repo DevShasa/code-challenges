@@ -14,13 +14,13 @@ def characterCount(string):
         # If a letter is not in the keys , assign a default value
         # If a letter is in the keys increment the key value by one
         if character in list_of_keys:
-            # Increment the coresponding key valyue by one
+            # Increment the corresponding key value by one
             dictionary[character] += 1
         else:
             # If teh code jumps to this statement it means that the
             # Character is not in the dictionary
             # The code in the else statement creates the dictionary key
-            # ...then assigns a default valuue of one
+            # ...then assigns a default value of one
             dictionary[character] = 1
 
     return dictionary
