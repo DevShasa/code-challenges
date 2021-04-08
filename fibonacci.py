@@ -23,3 +23,16 @@ def fibonacci(length):
 
 # Activate the function
 fibonacci(9)
+
+#%%
+'''
+Get the nth fibonacci number 
+'''
+def nthfibconacci(number):
+    # Generate the sequence
+    seed = [0,1]
+    for x in range(number):
+        n = seed[x] + seed[x+1]
+        seed.append(n)
+
+    return seed[number]
