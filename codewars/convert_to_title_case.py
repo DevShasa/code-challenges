@@ -28,3 +28,10 @@ def title_case(title, minor_words=''):
     return " ".join(new_string)
 
 
+# AN optimised solution 
+
+def o_title_case(title, minor_words=""):
+    # Capitalize the first word 
+    title =  title.capitalize().split(" ")
+    minor_words = minor_words.lower().split(" ")
+    " ".join([word if word in minor_words else word.capitalize() for word in title])
