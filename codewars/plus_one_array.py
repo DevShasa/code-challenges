@@ -23,5 +23,3 @@ def up_array(arr):
     else:
         return None
     return [int(n) for n in str(plus_one)]
-
-print(up_array([2,3,9]))
