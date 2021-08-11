@@ -23,3 +23,4 @@ def up_array(arr):
     else:
         return None
     return [int(n) for n in str(plus_one)]
+ 
