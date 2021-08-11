@@ -9,12 +9,9 @@ def sortme(words):
     word_dict = dict()
     for string in words:
         word_dict[string] = string.lower()
-    
-    sorted_dict = sorted(word_dict.items(), key=lambda x: x[1])
-    sorted_list = []
-    for x in sorted_dict:
-        sorted_list.append(x[0])
-    return sorted_list
+    word_dict = {}
+
+    return [x[0] for x in sorted(word_dict.items(), key=lambda x: x[1])]
 
 print(sortme(["C", "d", "a", "B"]))
 print(sortme(["Hello", "there", "I'm", "fine"]))
